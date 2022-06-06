@@ -1,4 +1,4 @@
-from agents import AbstractAgent
+from .agents import AbstractAgent
 import numpy as np
 
 class UcbAgent(AbstractAgent):

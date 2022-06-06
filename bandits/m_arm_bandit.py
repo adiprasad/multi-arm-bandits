@@ -1,5 +1,5 @@
 import numpy as np
-from gaussian_bandit import GaussianBandit
+from .gaussian_bandit import GaussianBandit
 import sys
 
 class MultiArmBandit(object):
@@ -16,7 +16,7 @@ class MultiArmBandit(object):
 
 
 	def init_bandits(self):
-		best_bandit_mean = - sys.maxint
+		best_bandit_mean = - sys.maxsize
 
 		for i in range(self.num_bandits):
 			bandit_mean = np.random.normal(self.bandit_sampling_mean, self.bandit_sampling_std_dev)

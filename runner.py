@@ -138,11 +138,11 @@ def plot_data(data_arr, plot_file_dir, experiment_mode, num_trials, type_of_plot
 
 		x = np.array(range(1, len(data_arr) + 1))
 
-		print "Length of x" 
-		print len(x)
+		print("Length of x") 
+		print(len(x))
 
-		print "Len of datarr"
-		print len(data_arr)
+		print("Len of datarr")
+		print(len(data_arr))
 
 		plt.plot(x, data_arr)
 
@@ -170,8 +170,8 @@ if __name__=="__main__":
 	# print "Optimal action shape"
 	# print optimal_action_per.shape
 
-	print rewards
-	print optimal_action_per
+	print(rewards)
+	print(optimal_action_per)
 
 	plot_data(rewards, os.path.join(os.getcwd(), "plots"), args.mode, args.num_trials, "Rewards")
 	plot_data(optimal_action_per, os.path.join(os.getcwd(), "plots"), args.mode, args.num_trials, "Optimal Action Percentage")

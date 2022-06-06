@@ -1,5 +1,5 @@
 import numpy as np
-from gaussian_bandit import GaussianBandit
+from .gaussian_bandit import GaussianBandit
 
 class GradientBandit(GaussianBandit):
 

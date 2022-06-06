@@ -1,8 +1,8 @@
-from m_arm_bandit import MultiArmBandit
-from gradient_bandit import GradientBandit
+from .m_arm_bandit import MultiArmBandit
+from .gradient_bandit import GradientBandit
 import sys
 import numpy as np
-from scipy.misc import logsumexp
+from scipy.special import logsumexp
 
 class MultiArmGradientBandit(MultiArmBandit):
 	

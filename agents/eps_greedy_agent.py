@@ -1,4 +1,4 @@
-from greedy_agent import GreedyAgent
+from .greedy_agent import GreedyAgent
 import numpy as np
 
 class EpsGreedyAgent(GreedyAgent):
