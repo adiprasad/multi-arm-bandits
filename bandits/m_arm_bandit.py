@@ -37,6 +37,9 @@ class MultiArmBandit(object):
 	def get_bandits(self):
 		return self.bandit_list
 
+	def get_bandit(self, idx):
+		return self.bandit_list[idx]
+
 
 
 
